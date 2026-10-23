@@ -1,5 +1,5 @@
 ---
-title: سوابق آموزشی
+title: مهارت‌ها
 hide:
   - navigation
   - toc
