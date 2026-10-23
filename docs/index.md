@@ -72,7 +72,7 @@ hide:
 
     سوابق کاری تمام وقت و پاره وقت
 
-    [](training-courses.md)
+    [](work-experience.md)
 
 -   :material-school:{ .md .middle } **آموزش**
 
@@ -80,7 +80,7 @@ hide:
 
     مدرس دوره‌های آموزشی ایمنی و بهداشت
 
-    [](certificates.md)
+    [](training-courses.md)
 
 -   :material-certificate:{ .md .middle } **گواهینامه‌ها**
 
@@ -88,7 +88,7 @@ hide:
 
     گواهینامه‌های اخذ شده در حیطه ایمنی و بهداشت
 
-    [](services/hearing-aids.md)
+    [](certificates.md)
 
 </div>
 
