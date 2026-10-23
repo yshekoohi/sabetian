@@ -1,0 +1,283 @@
+/* Hero: text on the start side, audiologist card on the end side */
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0 0 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--md-accent-fg-color--transparent, #e8f4fd) 0%, #eef7ff 100%);
+}
+.home-hero .hero-text {
+  flex: 1 1 auto;
+}
+.home-hero .hero-text h1 {
+  margin: 0 0 .25rem;
+  font-weight: 700;
+}
+.home-hero .hero-text h2 {
+  margin: 0 0 1rem;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+}
+.home-hero .hero-text p {
+  margin: 0 0 1rem;
+}
+
+.home-hero .hero-profile {
+  flex: 0 0 15rem;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  border-radius: 12px;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+}
+.home-hero .hero-profile p {
+  margin: .25rem 0;
+}
+.home-hero .profile-photo {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto .75rem;
+  border-radius: 50%;
+  border: 3px solid var(--md-default-fg-color--lightest);
+  background-color: var(--md-default-fg-color--lightest);
+  /* path is relative to this CSS file (docs/stylesheets/) */
+  background-image: url("../assets/images/team/audiologist.png");
+  background-size: cover;
+  background-position: center;
+}
+.home-hero .profile-meta {
+  font-size: .8rem;
+  color: var(--md-default-fg-color--light);
+}
+
+@media (max-width: 44rem) {
+  .home-hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.25rem 1rem;
+    gap: 1rem;
+  }
+
+  /* Same width for both cards */
+  .home-hero .hero-profile,
+  .home-hero .hero-info {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  /* Profile card first */
+  .home-hero .hero-profile {
+    order: -1;
+  }
+
+  .home-hero .hero-info {
+    padding: .5rem 1rem;
+  }
+  .home-hero .info-table th {
+    width: 7rem;
+  }
+}
+
+/* ===== Home page ===== */
+
+/* Feature strip */
+.home-features,
+.home-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.home-features > div,
+.home-steps > div {
+  padding: 1rem;
+  border-radius: 10px;
+  border: .05rem solid var(--md-default-fg-color--lightest);
+  text-align: center;
+}
+.home-features > div p,
+.home-steps > div p {
+  margin: .25rem 0;
+}
+
+/* Bigger icons inside cards and features */
+.md-typeset .lg { font-size: 1.6em; }
+
+/* Call to action */
+.home-cta {
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  background: var(--md-code-bg-color);
+}
+
+/* Responsive images */
+.md-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Hide right-hand TOC (from earlier) */
+.md-sidebar--secondary {
+  display: none;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .home-hero {
+  background: linear-gradient(135deg, #1e2433 0%, #232b3d 100%);
+}
+[data-md-color-scheme="slate"] .home-hero .hero-profile {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
+}
+
+/* Google Map embed */
+.map-embed {
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: .05rem solid var(--md-default-fg-color--lightest);
+}
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+@media (max-width: 44rem) {
+  .map-embed iframe { height: 300px; }
+}
+
+/* Fully clickable cards */
+.md-typeset .grid.cards.clickable > ul > li {
+  position: relative;
+  cursor: pointer;
+}
+
+.md-typeset .grid.cards.clickable > ul > li a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.md-typeset .grid.cards.clickable > ul > li a:hover {
+  text-decoration: none;
+}
+
+/* Keyboard focus: show the outline around the whole card */
+.md-typeset .grid.cards.clickable > ul > li:focus-within {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Personal info list inside the hero */
+/* Both hero cards share the same height */
+.home-hero {
+  align-items: stretch;
+}
+.home-hero .hero-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Personal info card */
+.home-hero .hero-info {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  padding: .75rem 1.5rem;
+  border-radius: 12px;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+}
+.home-hero .info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.home-hero .info-table th,
+.home-hero .info-table td {
+  padding: .2rem .5rem;
+  text-align: start;
+  vertical-align: top;
+  font-size: .7rem;
+  line-height: 1.8;
+  border-bottom: .05rem solid var(--md-default-fg-color--lightest);
+}
+.home-hero .info-table tr:last-child th,
+.home-hero .info-table tr:last-child td {
+  border-bottom: 0;
+}
+.home-hero .info-table th {
+  width: 9rem;
+  white-space: nowrap;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+}
+.home-hero .info-table td {
+  font-weight: 400;
+}
+.home-hero .info-table a {
+  text-decoration: none;
+}
+
+.home-hero .info-table th .twemoji {
+  margin-inline-end: .4rem;
+  color: var(--md-accent-fg-color);
+}
+.home-hero .info-table th .twemoji svg {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -.2em;
+}
+
+[data-md-color-scheme="slate"] .home-hero .hero-info {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
+}
+
+@media (max-width: 44rem) {
+  .home-hero {
+    align-items: center;
+  }
+  .home-hero .hero-info {
+    width: 100%;
+    padding: .5rem 1rem;
+  }
+  .home-hero .info-table th {
+    width: 7rem;
+  }
+}
+@media (max-width: 30rem) {
+  /* label above value on small phones */
+  .home-hero .info-table th,
+  .home-hero .info-table td {
+    display: block;
+    width: auto;
+    padding: .15rem 0;
+    border-bottom: 0;
+  }
+  .home-hero .info-table td {
+    padding-bottom: .25rem;
+    border-bottom: .05rem solid var(--md-default-fg-color--lightest);
+  }
+}
+
+/* Title */
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-size: 0.75rem;
+}
+
+/* Body text */
+.md-typeset .admonition > :not(.admonition-title),
+.md-typeset details > :not(summary) {
+  font-size: 0.7rem;
+}

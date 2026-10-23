@@ -1,0 +1,19 @@
+/* Self-hosted Vazirmatn (SIL Open Font License) - variable font, weights 100-900 */
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../assets/fonts/Vazirmatn-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --md-text-font: "Vazirmatn";
+}
+
+body,
+input,
+button,
+.md-typeset {
+  font-family: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+}

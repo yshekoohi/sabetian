@@ -1,0 +1,72 @@
+site_name: "مهندس وحید ثابتیان"
+site_url: https://yshekoohi.github.io/sabetian/
+repo_url: ""
+theme:
+  logo: false
+  favicon: images/favicon.png
+  language: fa
+  name: material
+  custom_dir: overrides
+  direction: rtl
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/weather-night
+        name: تغییر به حالت تاریک
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: تغییر به حالت روشن
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.prune
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    # - navigation.footer
+    - header.autohide
+    # - toc.follow
+    - search.suggest
+    - search.highlight
+
+    # Follows the visitor's system setting by default
+
+plugins:
+  - social
+  - tags
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/fonts.css
+  - stylesheets/extra.css
+  - stylesheets/home.css
+
+extra:
+  generator: false
+  homepage: https://yshekoohi.github.io/sabetian/
+
+
+
+nav:
+  - "مشخصات فردی": index.md
+  - "سوابق کاری": work-experience.md
+  - "سوابق آموزشی": training-courses.md
+  - "گواهینامه‌ها": certificates.md
+  - "مهارت‌ها": skilles.md

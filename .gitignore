@@ -1,0 +1,63 @@
+# MkDocs build output
+site/
+.cache/
+
+# Python virtual environment
+venv/
+env/
+.venv/
+
+# Python dependencies
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Node.js (if using mkdocs-material-extensions or custom JS)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+ehthumbs.db
+Desktop.ini
+._*
+
+# MkDocs temp files
+.mkdocs_build/
+.mkdocs_cache/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation
+_build/
+docs/_build/
+
+# Logs
+*.log
+logs/
+
+# mkdocs-material extra
+material/
+custom_dir/  # if you have a custom theme directory
