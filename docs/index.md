@@ -9,11 +9,11 @@ hide:
 </style>
 <div class="home-hero" markdown>
 
-<div class="hero-info">
+<div class="hero-info" >
   <table class="info-table">
     <tr>
       <th>تاریخ تولد</th>
-      <td>۰۳ / ۰۶ / ۱۳۶۴ (۴۰ سال)</td>
+     <td id="birth-date"></td>
     </tr>
     <tr>
       <th>وضعیت تأهل</th>
@@ -29,15 +29,15 @@ hide:
     </tr>
     <tr>
       <th>تلفن</th>
-      <td>
-        <a href="tel:09392181604" dir="ltr">۰۹۳۹۲۱۸۱۶۰۴</a>
+      <td tel>
+        ۰۹۳۹۲۱۸۱۶۰۴
         -
-        <a href="tel:09179832961" dir="ltr">۰۹۱۷۹۸۳۲۹۶۱</a>
+        ۰۹۱۷۹۸۳۲۹۶۱
       </td>
     </tr>
     <tr>
       <th>ایمیل</th>
-      <td>Vahid.Sabetian@gmail.com</td>
+      <td>vahid.sabetian@gmail.com</td>
     </tr>
     <tr>
       <th>آدرس</th>
@@ -45,6 +45,7 @@ hide:
     </tr>
   </table>
 </div>
+
 
 <div class="hero-profile" markdown>
 

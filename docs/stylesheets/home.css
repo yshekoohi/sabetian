@@ -44,7 +44,7 @@
   border: 3px solid var(--md-default-fg-color--lightest);
   background-color: var(--md-default-fg-color--lightest);
   /* path is relative to this CSS file (docs/stylesheets/) */
-  background-image: url("../assets/images/team/audiologist.png");
+  /* background-image: url("../assets/images/team/audiologist.png"); */
   background-size: cover;
   background-position: center;
 }
