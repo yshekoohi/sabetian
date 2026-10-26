@@ -3,3 +3,9 @@
   height: auto;
   border-radius: 8px;
 }
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-right-width: 4px;
+}
