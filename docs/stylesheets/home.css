@@ -37,14 +37,14 @@
   margin: .25rem 0;
 }
 .home-hero .profile-photo {
-  width: 110px;
-  height: 110px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto .75rem;
   border-radius: 50%;
   border: 3px solid var(--md-default-fg-color--lightest);
   background-color: var(--md-default-fg-color--lightest);
   /* path is relative to this CSS file (docs/stylesheets/) */
-  /* background-image: url("../assets/images/team/audiologist.png"); */
+  background-image: url("../assets/images/team/image.png");
   background-size: cover;
   background-position: center;
 }
